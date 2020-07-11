@@ -50,7 +50,7 @@ namespace CQRSMediatR.Middleware
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int) code;
 
-            if (result == string.Empty)
+            if (result == null)
             {
                 result = JsonConvert.SerializeObject(new { errors });
             }

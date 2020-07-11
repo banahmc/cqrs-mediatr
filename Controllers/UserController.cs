@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CQRSMediatR.Controllers
 {
+    [Route("api/user")]
     public class UserController : ApiControllerBase
     {
         [HttpGet("{id}")]
